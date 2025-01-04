@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Arrays in Javascript</title>
+</head>
+<body style="background-color:palegreen; font-family: Georgia, 'Times New Roman', Times, serif;">
+
+    <h2>Javascript Arrays</h2>
+    <p id="result1"></p>
+    <p id="result2"></p>
+    <p id="result3"></p>
+    <p id="result4"></p>
+
+    <script>
+            var cars = [" Mclaren", " Hyundai", " Honda", " Toyota", " Mercedes"]
+
+            // Display the original array
+            document.getElementById("result1").innerHTML = "Original Array: " + cars + ".";
+
+             // Display the array joined with " * "
+             document.getElementById("result2").innerHTML = "Array with join(): " + cars.join(" * ") + ".";
+
+             // Remove the last element using pop()
+             cars.pop();
+             document.getElementById("result3").innerHTML = "Array after pop(): " + cars + ".";
+
+             // Add a new element to the end of the array using push()
+             cars.push("Porsche");
+             document.getElementById("result4").innerHTML = "Array after push(): " + cars + ".";
+    </script>
+</body>
+</html>
